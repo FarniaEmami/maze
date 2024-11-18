@@ -25,3 +25,21 @@ const walls = [
 ]
 
 World.add(world, walls)
+
+// Maze generation 
+const cells = 3
+
+const grid = Array(cells).fill(null).map(() => Array(cells).fill(false))
+
+const verticals = Array(cells).fill(null).map(() => Array(cells - 1).fill(false))
+
+const horizontals = Array(cells - 1).fill(null).map(() => Array(cells).fill(false))
+
+const startRow = Math.floor(Math.random() * cells)
+const startColumn = Math.floor(Math.random() * cells)
+
+const stepThroughCell = (row, column) => {
+    
+}
+
+stepThroughCell(startRow, startColumn)
